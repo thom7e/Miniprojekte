@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 sudoku__ = [['x',8,'x',3,'x','x',5,'x',7],
          ['x','x','x','x','x',7,2,8,'x'],
@@ -77,6 +78,9 @@ def lösung(sudoku):
             else:
                 sudoku[row][col] = "x"
 
-
+start = time.time()
 lösung(G)
+end = time.time()
+time =(end-start)
 print(G)
+print(f"Time elapsed: {time} Seconds")
