@@ -71,12 +71,12 @@ def lösung(sudoku):
     for x in range(1,10):
         if solve(sudoku,row,col,x):
             sudoku[row][col] = x
-
+            #print(sudoku)
             if lösung(sudoku):
                 return True
-            sudoku[row][col] = "x"
+            else:
+                sudoku[row][col] = "x"
 
-    return False
 
-print(lösung(G))
+
 print(G)
