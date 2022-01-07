@@ -78,5 +78,5 @@ def lösung(sudoku):
                 sudoku[row][col] = "x"
 
 
-
+lösung(G)
 print(G)
